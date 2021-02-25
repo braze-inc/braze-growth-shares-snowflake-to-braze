@@ -1,0 +1,53 @@
+{
+  "name": "Snowflake Braze Connector",
+  "description": "Exports data from Snowflake to Braze via REST API.",
+  "image": "heroku/python",
+  "repository": "https://github.com/Appboy/Growth_Snowflake_Connector",
+  "keywords": ["python", "snowflake", "braze" ],
+  "env": {
+    "sfUser": {
+      "description": "snowflake user name",
+      "generator": "secret"
+    },
+    "sfPwd": {
+      "description": "Base64 encoded password",
+      "generator": "secret"
+    },
+    "sfAccount": {
+      "description": "snowflake account"
+    },
+    "sfRegion": {
+      "description": "snowflake region ie US-EAST-1"
+    },
+    "sfDebug": {
+      "description": "Boolean, debug state for logging"
+    },
+    "databaseName": {
+      "description": "snowflake database name"
+    },
+    "warehouseName": {
+      "description": "snowflake warehouse name"
+    },
+    "schemaName": {
+      "description": "snowflake schema name"
+    },
+    "configTable": {
+      "description": "configuration table name"
+    },
+    "rsaPrivateKey": {
+      "description": "rsa private key"
+    },
+    "logTable": {
+      "description": "log table name"
+    },
+    "trackEndPoint": {
+      "description": "braze user track endpoint"
+    },
+    "logname": {
+      "description": "log file name"
+    },
+    "logsize": {
+      "description": "log file size"
+    }
+  }
+}
